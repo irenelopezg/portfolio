@@ -1,0 +1,337 @@
+@font-face {
+    font-family: Theinhardt-Light;
+    src: url(../fonts/TheinhardtLight.otf);
+}
+
+@font-face {
+    font-family: Theinhardt-Regular;
+    src: url(../fonts/TheinhardtReg.otf);
+}
+
+@font-face {
+    font-family: Theinhardt-Medium;
+    src: url(../fonts/TheinhardtMed.otf);
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: Theinhardt-Regular;
+    text-decoration: none;
+    display:flex;
+    justify-content: space-between;
+}
+nav{
+    word-spacing: 24px;
+}
+#email{
+    position: relative;
+    display: inline-block;
+    margin-left: 82vw;
+    margin-top: 40px;
+    animation: rotate-in-center 5s linear infinite none;
+}
+#email:hover{
+    animation: none;
+}
+#textocentrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nombre{
+    font-family: Theinhardt-Medium;
+}
+.portfolio{
+    font-family: Theinhardt-Light;
+    padding-left: 8px;
+}
+a{
+    text-decoration:none;
+    color: black;
+    border-bottom: 2.5px solid black;
+    font-size: 18px;
+}
+a:hover{
+    opacity: 0.;
+    border-bottom: #FF05F5;
+    text-transform: none;
+    color: #FF05F5;
+}
+body{
+    font-family: Theinhardt-Regular;
+    margin-left: 32px;
+    margin-right: 32px;
+    background-color: #F3F3F3;
+}
+h1{
+    font-size: 72px;
+}
+h2{
+    font-size: 58px;
+    margin-bottom: 120px;
+    border-bottom: 1px solid black;
+
+}
+h3{
+    font-family: Theinhardt-Medium;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+p{
+    font-family: Theinhardt-Regular;
+    font-size: 18px;
+    line-height: 22px;
+}
+.hola{
+    border-bottom: 2.5px solid black;
+}
+.subtitle{
+    text-align: left;
+    margin-bottom: 72px;
+    display: flex;
+    border-bottom: 2.5px solid black;
+    padding-bottom: 16px;
+}
+.underline{
+    font-size: 32px;
+    margin-top: 40px;
+}
+.project-info{
+    font-family: Theinhardt-Regular;
+    font-size: 16px;
+    padding-bottom: 32px;
+}
+.right{
+    display: flex;
+    align-items: flex-end;
+}
+#scroll{
+    animation: scroll 1s linear infinite both;
+}
+.selected{
+    padding-right: 8px;
+    padding-bottom: 6px;
+}
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80vh;
+    padding-bottom: 120px;
+}
+.project-img{
+    width: 50%;
+    padding-left: 32px;
+}
+
+.project-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 472px;
+}
+.card{
+    padding-left: 54px;
+    padding-top: 40px;
+    padding-right: 32px;
+    width: 50%;
+}
+.card:hover{
+    scale: 0.8;
+}
+.view{
+    padding-top: 32px;
+}
+.Top{
+    text-align: right;
+    padding-bottom: 4px;
+    padding-left:8px;
+    padding-right: 8px;
+    padding-top: 16px;
+    border-top: 2.5px solid black;;
+}
+#arrow{
+    border-bottom: none;
+}
+.project-section{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.project{
+    display: flex;
+    margin-bottom: 120px;
+
+}
+.project-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 160px;
+}
+.project-last{
+    display: flex;
+    margin-bottom: 96px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-bottom: 32px;
+    height: 32px;
+}
+.bottom{
+    word-spacing: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    header{
+        margin-top: 48px;
+        font-family: Theinhardt-Regular;
+        text-decoration: none;
+        display:flex;
+        align-content: center;
+        align-items: center;
+        height: 32px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    nav{
+        word-spacing: 64px;
+    }
+    header a{
+        font-size: 24px;
+    }
+    .intro{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 0px;    
+        height: 80vh;
+    }
+    .hola{
+        margin-top: 40vh;
+        border-bottom: 2.5px solid black;
+        margin-bottom: 8px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .project{
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+    }
+    .project-reverse{
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+    .project-last{
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+    }
+    .card{
+        width: 100%;
+        padding: 24px;
+        height: 362px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .project-img{
+        width: 100%;
+        height: 320px;
+        padding-left: 0px;
+    }
+    .project-section{
+        width: 100%;
+        margin-top: 80px;
+    }
+    .project-img img {
+        height: 320px;
+    }
+    h3{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    a{
+        font-size: 18px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .project-info{
+        font-size: 14px;
+    }
+    #email{
+        margin-left: 62vw;
+        margin-top: 8px;
+        display: none;
+    }
+    .nombre{
+        border-bottom: none;
+    }
+    footer a{
+        font-size: 20px;
+        align-content: space-around;
+    }
+    footer{
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+        gap: 32px;
+    
+    }
+}
+
+
+/* animation*/
+
+@keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@-webkit-keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+}
+
